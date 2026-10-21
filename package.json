@@ -1,0 +1,24 @@
+{
+  "name": "pantry-pal-alexa-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A self-hosted Streamable HTTP MCP server for an Alexa+ pantry and meal-planning experience.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "express": "^5.1.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3"
+  }
+}
